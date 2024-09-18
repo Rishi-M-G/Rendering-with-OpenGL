@@ -28,3 +28,4 @@ Today marks the first day of this project. The focus was on setting up the basic
      - Implemented a rendering loop that clears the window to a red color.
      - Set up for future inclusion of drawing objects and using shaders.
 
+![GLEW](../images/GLEW.png)
