@@ -1,10 +1,10 @@
-# 3D Rendering Progress - Day 1
+# 3D Rendering
 
 ## Overview
 
 Welcome to the 3D Rendering Progress repository! This repository tracks the development of a 3D rendering project using OpenGL. The primary goal is to demonstrate the learning and progress made over time in creating and manipulating 3D graphics. 
 
-### Day 1 - September 17, 2024
+### Day 1
 
 Today marks the first day of this project. The focus was on setting up the basic environment and understanding some of the fundamental components involved in 3D rendering. 
 
