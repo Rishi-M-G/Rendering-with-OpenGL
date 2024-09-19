@@ -69,7 +69,7 @@ On Day 2, the focus was on understanding shaders and the rendering pipeline in O
    - Finally, we learned how to bind and use the shader program within the rendering loop.
    - This allows the GPU to use custom shaders to process vertices and fragments for rendering the scene.
 
-## Concepts Covered
+## Code Progress
 In the Day 2 code, I have:
 - **Implemented and compiled a basic shader program** including a **vertex shader** and **fragment shader**.
 - Created and configured a **Vertex Array Object (VAO)** and **Vertex Buffer Object (VBO)** to manage vertex data.
@@ -77,3 +77,45 @@ In the Day 2 code, I have:
 - Prepared the pipeline to render actual objects with custom shaders, setting up the groundwork for further rendering steps.
 
 ![Triangle](./images/Triangle.png)
+
+
+### Day 3
+
+On **Day 3**, we focused on the math behind rendering, specifically dealing with vectors, matrices, and uniform variables in OpenGL. These are essential for transformations and rendering complex scenes.
+
+## Concepts Covered
+1. **Introduction to Vectors**
+   - Vectors are fundamental in graphics programming for representing points, directions, and more.
+   - Discussed vector representation in 2D and 3D space.
+
+2. **Vector Operations**
+   - Operations like addition, subtraction, dot product, and cross product were covered.
+   - These are important for calculating normals, lighting, and object movement.
+
+3. **Matrix Introduction and Operations**
+   - Matrices are used to represent transformations like rotation, scaling, and translation.
+   - Basic matrix operations such as multiplication were covered to combine transformations.
+
+4. **Matrix Transforms**
+   - Explored the use of matrices to transform objects in a 3D space.
+   - Transformations covered:
+     - **Translation**: Moving an object from one place to another.
+     - **Scaling**: Changing the size of an object.
+     - **Rotation**: Rotating objects around an axis.
+     - **Combination of Transformations**: Combining translation, rotation, and scaling to achieve complex movements.
+
+5. **OpenGL Math Library**
+   - Introduction to OpenGL math libraries like **GLM** for handling vector and matrix operations easily within OpenGL.
+
+6. **Uniform Variables**
+   - **Uniform variables** allow for passing data (such as transformation values) from the CPU to the GPU.
+   - In this code, a uniform variable (`xMove`) is used to move a triangle along the x-axis in the shader, creating dynamic movement.
+
+
+## Code Progress
+
+- A **uniform variable** was introduced to allow dynamic control over the x-axis movement of a triangle.
+- The shader program was extended to accept the `xMove` uniform variable and apply it to the triangle's vertex positions.
+- The triangle moves smoothly left and right across the screen in a loop, demonstrating how uniform variables can control transformations in real time.
+
+![Triangle](./images/UniformVariables.gif)
